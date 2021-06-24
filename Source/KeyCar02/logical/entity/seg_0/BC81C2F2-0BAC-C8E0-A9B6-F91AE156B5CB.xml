@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC81C2F2-0BAC-C8E0-A9B6-F91AE156B5CB" name="DIM_FORNECEDOR">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:28:12 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>dim_fornecedor</preferredAbbreviation>
+<shortName>fornecedores</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FORNECEDOR" id="A22DE427-37E8-D42E-73F3-85537601AD4D">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:33:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificação do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO" id="35D8E61F-2D4D-263A-F3D3-F6258124B793">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:34:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo Fornecedor:
+- Juridica
+- Fisica]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="E25FCC98-3D45-202C-3144-3EFF0D68A9C8">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:34:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BAIRRO" id="B2FD6739-F400-F112-FDB7-E7AA2DB6A221">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:35:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bairro do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REGIAO" id="119BFB46-59A3-3047-EA92-F10C7C67FC59">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIDADE" id="7C8EF2FB-FB4A-BA0E-4D72-FF57F65D3EC7">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:36:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cidade do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UF" id="A9260766-98CA-8A79-1EBF-83529F65D206">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:36:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unidade federativa do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>02</dataTypeSize>
+<ownDataTypeParameters>02,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAIS" id="89FAC382-898B-3F8B-627A-1CF8FF6D0965">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:37:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[País do fornecedor]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A249B09B-08DC-083F-43C5-A5452E1E5E3A" name="DIM_FORNECEDOR PK">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 18:33:53 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A22DE427-37E8-D42E-73F3-85537601AD4D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

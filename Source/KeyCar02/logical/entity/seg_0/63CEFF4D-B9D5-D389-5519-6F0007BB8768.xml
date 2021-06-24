@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="63CEFF4D-B9D5-D389-5519-6F0007BB8768" name="DIM_PRODUTO">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:30:07 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>dim_produto</preferredAbbreviation>
+<shortName>produtos</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PRODUTO" id="53CAEB32-358B-FA1A-777C-DB90681185A9">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:53:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificação do produto]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="ACF50497-2CC4-07A0-013C-13EC5E6F4458">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:53:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do produto]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRICAO" id="22E83C9E-9DE2-AE0B-69E6-28B75DA5B9AC">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:54:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do produto]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO" id="0C63500E-808F-8E71-BE8F-F48DD0F42FC0">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:55:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do produto:
+- Carro novo
+- Carro usado
+- Autopeças]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORIA" id="B30DEF60-951E-60A2-071E-EDE2C2709E08">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 16:01:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[- Carro 4 portas (carros)
+- Carro 2 portas (carros)
+- Amortecedor (peças)
+- Direção (peças)
+- Motor (peças)]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTADORA" id="2067C000-339C-2971-E349-42116651A72F">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 16:04:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Montadora do veículo]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ANO" id="53AAFF50-C89C-EBCC-5985-FF6FB30BB31C">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 16:05:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ano do veículo/versão ou peças]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODELO" id="610D6CC2-26E6-73DE-54E3-DEAF761F3D47">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 16:06:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do modelo do veículo ou peças]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC9A4468-4BC7-9D98-451F-8600B6DA376E" name="DIM_PRODUTO PK">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:53:43 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53CAEB32-358B-FA1A-777C-DB90681185A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

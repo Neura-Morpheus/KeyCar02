@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA160875-655D-914D-FA29-51C214D5D5F3" name="DIM_TEMPO">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:20:54 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>dim_tempo</preferredAbbreviation>
+<shortName>tempos</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TEMPO" id="431EE773-AAD4-8CD2-EA78-259D3ADFFD3B">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:40:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de registros de tempo]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA" id="0BB15688-F9B8-530D-0095-8D970EEF7A70">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:41:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro de Data]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ANO" id="871DBED9-76DB-5000-DF62-C9A8B6AB2C47">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:42:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ano do registro]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ANO_MES" id="C816D624-4DF1-3EE0-356D-E9852D134630">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:42:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ano e Mes do registro (2021/01)]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MES_NUM" id="43E973CA-A189-A1A5-3723-531ED77D1BC1">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:44:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Mês em formato numérico]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MES_NOME" id="213FCA42-C6FA-BA4A-6FA5-983142C8810E">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:45:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do mês (Janeiro, Fevereiro, ...)]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRIMESTRE" id="1A0F3C34-9264-802B-DFFA-44A425C0D526">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:46:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Trimestre do registro (1o. Tri ou Qtr1)]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEMESTRE" id="54C53620-3E69-A0A1-ACEF-6336F089D261">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:47:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Semestre do registro (1o. Sem, ....)]]></commentInRDBMS>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B6D060B-72E4-98D3-05F3-02CDF7AF8D3C" name="DIM_TEMPO PK">
+<createdBy>asait</createdBy>
+<createdTime>2021-06-24 15:41:12 UTC</createdTime>
+<ownerDesignName>KeyCar02</ownerDesignName>
+<engineerTo>
+<item key="D6734BC9-1044-802B-4C25-D54D8AE4C8F8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>431EE773-AAD4-8CD2-EA78-259D3ADFFD3B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
